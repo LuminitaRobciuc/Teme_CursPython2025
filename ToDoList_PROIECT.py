@@ -10,8 +10,7 @@
 #   ✅ marcheaza o sarcină ca finalizată
 #   ✅ șterge o sarcină
 #   ✅ salveaza automat sarcinile într-un fișier (tasks.txt)
-#
-#
+
 
 import os  # importăm modulul os – îl folosim ca să verifice dacă fișierul există
 
@@ -23,8 +22,8 @@ class ToDoList:
     def __init__(self, filename="tasks.txt"):
         """
         Constructorul clasei.
-        - self.filename: numele fișierului unde salvăm sarcinile
-        - self.tasks: lista în care stocăm sarcinile sub formă de dicționare
+        - self.filename: numele fișierului unde se salveaza sarcinile
+        - self.tasks: lista în care stochez sarcinile sub formă de dicționare
         """
         self.filename = filename
         self.tasks = []  # inițial lista e goală
@@ -39,7 +38,7 @@ class ToDoList:
         """
         self.tasks.append({"task": task, "done": False})
         print(f"Sarcina '{task}' a fost adăugată cu succes!")
-        self.save_tasks()  # după adăugare, salvăm lista actualizată
+        self.save_tasks()  # după adăugare, salvez lista actualizată
 
     def view_tasks(self):
         """
