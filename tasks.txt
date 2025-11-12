@@ -1,0 +1,5 @@
+Invat engleza timp perfect|False
+Citesc 10 pagini carte Python|False
+citesc 10 pagini pe zi|False
+Termin tema 1|False
+Termin tema 2|False
